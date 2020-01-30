@@ -30,6 +30,7 @@ export class TodoComponent implements OnInit {
     });
   }
 
+  // Adding task to firebase
   onAdd(itemTitle) {
     this.todoService.addTitle(itemTitle.value);
     itemTitle.value = null;
